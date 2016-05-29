@@ -1,15 +1,18 @@
 What is it:
-	Server returns to Client capitalized sentence.
+Server returns to Client capitalized sentence.
 
 
 To compile Server:
-	javac Server.java
+$ javac Server.java
 
 To run Server:
-	java Server
+$ java Server
 
 To compile Client:
-	javac Client.java
+$ javac Client.java
 
 To run Client:
-	java Client
+$ java Client
+
+To stop Server or Client
+press [Ctrl] + [C]
