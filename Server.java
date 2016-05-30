@@ -5,7 +5,12 @@ class Server{
 	public static void main(String argv[]) throws Exception{
 		String clientSentence = "nothing here";
         String capitalizedSentence;
-        ServerSocket welcomeSocket = new ServerSocket(6789);
+		int port;
+		BufferedReader inFromUser = new BufferedReader (new InputStreamReader(System.in));
+		System.out.printf("input port\n");
+		port = Integer.parseInt(inFromUser.readLine());
+
+        ServerSocket welcomeSocket = new ServerSocket(port);
 		System.out.println("Server started");
         while(true){
 			Socket connectionSocket = welcomeSocket.accept();
